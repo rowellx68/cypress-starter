@@ -1,0 +1,25 @@
+<template>
+  <div class="columns">
+    <div class="column is-4-tablet is-offset-4-tablet is-5-desktop is-offset-3-desktop">
+      <div class="box">
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control">
+            <input type="text" value.bind="username" class="input" placeholder="john.smith">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input type="password" value.bind="password" class="input" placeholder="password">
+          </div>
+        </div>
+
+        <div class="field">
+          <button class="button is-primary is-fullwidth" click.delegate="login()">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

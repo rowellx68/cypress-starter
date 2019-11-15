@@ -1,0 +1,29 @@
+<template>
+  <table class="table is-bordered is-stripped is-fullwidth">
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>Sept</th>
+        <th>Oct</th>
+        <th>Nov</th>
+        <th>Dec</th>
+        <th>Jan</th>
+        <th>Feb</th>
+        <!-- <th>Mar</th>
+        <th>Apr</th>
+        <th>May</th>
+        <th>Jun</th>
+        <th>Jul</th>
+        <th>Aug</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="row of data" data-test="attendance-row-${row.id}">
+        <td>${row.groupName}</td>
+        <td data-test="attendance-row-${row.id}-cell-${$index}" repeat.for="val of row.attendances">
+          ${val}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</template>

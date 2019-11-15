@@ -1,0 +1,23 @@
+$primary: #5f27cd;
+$container-padding-size: 1em;
+
+@import '~bulma';
+@import '../resources/chart/chart-base';
+
+html {
+  overflow: auto;
+}
+
+.container {
+  padding-left: $container-padding-size;
+  padding-right: $container-padding-size;
+}
+
+main {
+  padding-top: $container-padding-size * 2;
+  padding-bottom: $container-padding-size * 2;
+}
+
+.navbar-brand {
+  margin-left: -12px;
+}

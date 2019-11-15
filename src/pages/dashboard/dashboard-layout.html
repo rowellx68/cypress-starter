@@ -1,0 +1,10 @@
+<template>
+  <require from="./dashboard-layout.scss"></require>
+  <require from="./components/attendance-table"></require>
+
+  <div class="box is-fullwidth dashboard-charts">
+    <h2 class="title is-4">Attendances</h2>
+    <line-chart data.bind="lineData" options.bind="lineOptions"></line-chart>
+    <attendance-table data.bind="tableData"></attendance-table>
+  </div>
+</template>

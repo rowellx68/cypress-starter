@@ -1,0 +1,10 @@
+line-chart,
+pie-chart {
+  display: block;
+  height: 100%;
+
+  > canvas {
+    // height: 400px;
+    width: 100%;
+  }
+}

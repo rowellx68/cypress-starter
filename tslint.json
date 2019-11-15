@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "trailing-comma": true,
+    "member-access": true,
+    "no-empty": true,
+    "ordered-imports": true,
+    "quotemark": [true, "single"]
+  }
+}
