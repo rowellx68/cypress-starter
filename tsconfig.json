@@ -19,12 +19,16 @@
     "moduleResolution": "node",
     "baseUrl": "src",
     "resolveJsonModule": true,
-    "allowJs": true
+    "allowJs": true,
+    "types": [
+      "Cypress"
+    ]
   },
   "include": [
     "./src/**/*.ts",
     "./test/**/*.ts",
-    "./types/**/*.d.ts"
+    "./types/**/*.d.ts",
+    "cypress"
   ],
   "atom": {
     "rewriteTsconfig": false
