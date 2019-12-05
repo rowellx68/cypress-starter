@@ -5,19 +5,19 @@
         <div class="field">
           <label class="label">Username</label>
           <div class="control">
-            <input type="text" value.bind="username" class="input" placeholder="john.smith">
+            <input type="text" data-test="login-username-input" value.bind="username" class="input" placeholder="john.smith">
           </div>
         </div>
 
         <div class="field">
           <label class="label">Password</label>
           <div class="control">
-            <input type="password" value.bind="password" class="input" placeholder="password">
+            <input type="password" data-test="login-password-input" value.bind="password" class="input" placeholder="password">
           </div>
         </div>
 
         <div class="field">
-          <button class="button is-primary is-fullwidth" click.delegate="login()">Login</button>
+          <button data-test="login-login-button" class="button is-primary is-fullwidth" click.delegate="login()">Login</button>
         </div>
       </div>
     </div>

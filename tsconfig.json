@@ -4,7 +4,7 @@
     "module": "esnext",
     "skipLibCheck": true,
     "typeRoots": [
-      "./node_modules/@types"
+      "node_modules/@types"
     ],
     "esModuleInterop": true,
     "removeComments": true,
@@ -16,6 +16,11 @@
       "es2015",
       "dom"
     ],
+    "types": [
+      "jest",
+      "node",
+      "Cypress"
+    ],
     "moduleResolution": "node",
     "baseUrl": "src",
     "resolveJsonModule": true,
@@ -24,7 +29,11 @@
   "include": [
     "./src/**/*.ts",
     "./test/**/*.ts",
-    "./types/**/*.d.ts"
+    "./types/**/*.d.ts",
+    "cypress"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "atom": {
     "rewriteTsconfig": false
