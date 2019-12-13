@@ -36,5 +36,5 @@ node_modules
 /test/coverage-jest
 /test/coverage-karma
 
-/cypress/videos
-/cypress/screenshots
+/e2e/screenshots
+/e2e/videos
