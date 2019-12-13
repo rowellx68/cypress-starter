@@ -14,6 +14,10 @@ export class PieChartCustomElement extends ChartBase {
     this.createChart();
   }
 
+  public dataChanged() {
+    this.updateChart();
+  }
+
   public detached() {
     this.destroyChart();
   }

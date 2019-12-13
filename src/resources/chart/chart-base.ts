@@ -23,13 +23,19 @@ export abstract class ChartBase {
    * Destroy the chart.
    */
   public destroyChart() {
-    this.chart.destroy();
+    this.chart?.destroy();
+    this.chart = undefined;
   }
 
   /**
    * Update the chart data/options.
    */
   public updateChart(updateOptions?: ChartUpdateProps) {
+    if (!this.chart) {
+      return;
+    }
+
+    this.chart.data = this.data;
     this.chart.update(updateOptions);
   }
 }

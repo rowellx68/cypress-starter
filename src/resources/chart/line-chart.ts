@@ -14,6 +14,10 @@ export class LineChartCustomElement extends ChartBase {
     this.createChart();
   }
 
+  public dataChanged() {
+    this.updateChart();
+  }
+
   public detached() {
     this.destroyChart();
   }
