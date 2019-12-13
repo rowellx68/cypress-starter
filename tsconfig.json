@@ -29,6 +29,7 @@
   "include": [
     "./src/**/*.ts",
     "./test/**/*.ts",
+    "./e2e/**/*.ts",
     "./types/**/*.d.ts",
     "cypress"
   ],
